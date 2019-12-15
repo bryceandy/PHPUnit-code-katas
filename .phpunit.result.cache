@@ -1,1 +1,1 @@
-C:37:"PHPUnit\Runner\DefaultTestResultCache":110:{a:2:{s:7:"defects";a:0:{}s:5:"times";a:1:{s:50:"PrimeFactorsTest::it_generates_prime_factors_for_1";d:0.005;}}}
+C:37:"PHPUnit\Runner\DefaultTestResultCache":234:{a:2:{s:7:"defects";a:0:{}s:5:"times";a:3:{s:50:"PrimeFactorsTest::it_generates_prime_factors_for_1";d:0.002;s:50:"PrimeFactorsTest::it_generates_prime_factors_for_2";d:0;s:50:"PrimeFactorsTest::it_generates_prime_factors_for_3";d:0;}}}

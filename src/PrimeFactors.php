@@ -8,8 +8,8 @@ class PrimeFactors
     {
         $factors = [];
 
-        for ($divisor = 2; $number > 1; $divisor++)
-        {
+        for ($divisor = 2; $number > 1; $divisor++) {
+
             for (; $number % $divisor === 0; $number /= $divisor) {
 
                 $factors[] = $divisor;

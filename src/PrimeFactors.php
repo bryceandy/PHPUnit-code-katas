@@ -7,17 +7,13 @@ class PrimeFactors
     public function generate($number): array
     {
         $factors = [];
-        $divisor = 2;
 
-        while ($number > 1) {
-
-            while ($number % $divisor === 0) {
+        for ($divisor = 2; $number > 1; $divisor++)
+        {
+            for (; $number % $divisor === 0; $number /= $divisor) {
 
                 $factors[] = $divisor;
-
-                $number /= $divisor;
             }
-            $divisor++;
         }
 
         return $factors;

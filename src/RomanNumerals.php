@@ -25,10 +25,9 @@ class RomanNumerals
         $romanNum = '';
 
         foreach (self::NUMERALS as $numeral => $arabic) {
-            while ($number >= $arabic) {
-                $romanNum .= $numeral;
 
-                $number -= $arabic;
+            for (; $number >= $arabic; $number -= $arabic) {
+                $romanNum .= $numeral;
             }
         }
 

@@ -45,6 +45,9 @@ class RomanNumeralsTest extends TestCase
             [17, 'XVII'],
             [18, 'XVIII'],
             [19, 'XIX'],
+            [20, 'XX'],
+            [24, 'XXIV'],
+            [29, 'XXIX'],
         ];
     }
 }

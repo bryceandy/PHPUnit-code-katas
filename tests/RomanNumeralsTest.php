@@ -45,7 +45,8 @@ class RomanNumeralsTest extends TestCase
             [40, 'XL'],
             [50, 'L'],
             [99, 'XCIX'],
-            [174, 'CLXXIV']
+            [174, 'CLXXIV'],
+            [397, 'CCCXCVII']
         ];
     }
 }

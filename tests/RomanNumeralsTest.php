@@ -34,6 +34,17 @@ class RomanNumeralsTest extends TestCase
             [6, 'VI'],
             [7, 'VII'],
             [8, 'VIII'],
+            [9, 'IX'],
+            [10, 'XX'],
+            [11, 'XXI'],
+            [12, 'XXII'],
+            [13, 'XXIII'],
+            [14, 'XXIV'],
+            [15, 'XXV'],
+            [16, 'XXVI'],
+            [17, 'XXVII'],
+            [18, 'XXVIII'],
+            [19, 'XXIX'],
         ];
     }
 }

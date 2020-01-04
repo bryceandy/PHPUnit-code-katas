@@ -8,6 +8,13 @@ class RomanNumerals
     {
         $romanNum = '';
 
+        while ($number > 4) {
+
+            $romanNum .= 'V';
+
+            $number -= 5;
+        }
+
         while ($number > 3) {
 
             $romanNum .= 'IV';

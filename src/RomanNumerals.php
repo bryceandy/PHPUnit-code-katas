@@ -8,9 +8,18 @@ class RomanNumerals
     {
         $romanNum = '';
 
-        for ($count = 1; $count <= $number; $count++) {
+        while ($number > 3) {
+
+            $romanNum .= 'IV';
+
+            $number -= 4;
+        }
+
+        while ($number > 0) {
 
             $romanNum .= 'I';
+
+            $number--;
         }
 
         return $romanNum;

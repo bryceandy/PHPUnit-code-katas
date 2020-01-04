@@ -4,43 +4,24 @@ namespace App;
 
 class RomanNumerals
 {
+    public const NUMERALS = [
+        'X' => 10,
+        'IX' => 9,
+        'V' => 5,
+        'IV' => 4,
+        'I' => 1,
+    ];
+
     public static function generate($number): string
     {
         $romanNum = '';
 
-        while ($number > 9) {
+        foreach (self::NUMERALS as $numeral => $arabic) {
+            while ($number >= $arabic) {
+                $romanNum .= $numeral;
 
-            $romanNum .= 'XX';
-
-            $number -= 10;
-        }
-
-        while ($number > 8) {
-
-            $romanNum .= 'IX';
-
-            $number -= 9;
-        }
-
-        while ($number > 4) {
-
-            $romanNum .= 'V';
-
-            $number -= 5;
-        }
-
-        while ($number > 3) {
-
-            $romanNum .= 'IV';
-
-            $number -= 4;
-        }
-
-        while ($number > 0) {
-
-            $romanNum .= 'I';
-
-            $number--;
+                $number -= $arabic;
+            }
         }
 
         return $romanNum;

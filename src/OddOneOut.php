@@ -5,23 +5,23 @@ namespace App;
 class OddOneOut
 {
 
-    public static function seek($A) {
+    public static function seek($my_array) {
 
-        foreach ($A as $arrIndex => $arrIndexValue) {
+        foreach ($my_array as $key => $val) {
 
-            $originalValue = $arrIndexValue;
-            unset($A[$arrIndex]);
+            $originalValue = $val;
+            unset($my_array[$key]);
 
-            if (in_array($originalValue, $A, true)) {
+            if (in_array($originalValue, $my_array, true)) {
 
-                unset($A[array_search($originalValue, $A, true)]);
+                unset($my_array[array_search($originalValue, $my_array, true)]);
             }
             else {
-                $A[$arrIndex] = $originalValue;
+                $my_array[$key] = $originalValue;
             }
         }
 
-        $indexed = array_values($A);
-        return $indexed[0];
+        $indexedResult = array_values($my_array);
+        return $indexedResult[0];
     }
 }

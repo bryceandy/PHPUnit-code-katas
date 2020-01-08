@@ -31,9 +31,8 @@ class BinaryGap
         return max($comparator);
     }
 
-    public function createBinary($num, $binary = ''): int
+    public function createBinary($num, $binary = ''): string
     {
-
         while ($num % 2 === 0) {
             $binary = '0'.$binary;
             $num /= 2;
@@ -51,6 +50,6 @@ class BinaryGap
         }
 
         $binary = '1'.$binary;
-        return (int) $binary;
+        return $binary;
     }
 }

@@ -66,4 +66,25 @@ Create a function that receives a positive number and returns its prime factors 
 
 ## 3. Roman Numerals
 
-Create a function that receives a number from 1 to 3999 and outputs its roman numeral
+Create a function that receives a number from 1 to 3999 and outputs its roman numeral.
+
+## 4. Cyclic Rotation
+
+Complete the function rotRight. It should return the resulting array of integers.
+rotRight has the following parameter(s):
+
+1. An array of integers a.
+2. An integer d, the number of rotations.
+
+#### Output:
+
+Print a single line of n space-separated integers denoting the final state of the array after performing d right rotations.
+
+Sample Input:
+
+1 2 3 4 5
+4
+
+Sample Output:
+
+2 3 4 5 1

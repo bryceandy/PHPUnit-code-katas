@@ -7,19 +7,21 @@ class BinaryGap
 
     public function findGap($N) {
 
-        $binNum = $this->createBinary($N);
+        $binNum = $this->createBinaryString($N);
+        // Convert the binary string to an array of integers
         $binArray = array_map('intval', str_split($binNum));
         $binArrayLength = count($binArray);
+
         $counter = 0;
         $comparator = [];
 
         for ($iterator = 1; $iterator < $binArrayLength; $iterator++ ) {
+
             if ($binArray[$iterator] === 0) {
                 $counter++;
             }
 
             if ($binArray[$iterator] === 1 && $counter > 0){
-
                 $comparator[] = $counter;
                 $counter = 0;
             }
@@ -31,7 +33,7 @@ class BinaryGap
         return max($comparator);
     }
 
-    public function createBinary($num, $binary = ''): string
+    private function createBinaryString($num, $binary = ''): string
     {
         while ($num % 2 === 0) {
             $binary = '0'.$binary;

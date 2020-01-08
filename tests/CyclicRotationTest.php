@@ -16,9 +16,7 @@ class CyclicRotationTest extends TestCase
      */
     public function it_rotates_an_array_to_the_right($arr, $times, $result): void
     {
-        $rotation = new CyclicRotation();
-
-        $this->assertEquals($result, $rotation->toRight($arr, $times));
+        $this->assertEquals($result, CyclicRotation::toRight($arr, $times));
     }
 
     /**

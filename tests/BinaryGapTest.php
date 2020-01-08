@@ -28,6 +28,7 @@ class BinaryGapTest extends TestCase
             [1041, 5],
             [9, 2],
             [15, 0],
+            [32, 0],
         ];
     }
 }

@@ -28,6 +28,7 @@ class CyclicRotationTest extends TestCase
     {
         return [
             [[3, 4, 5, 6], 3, [4, 5, 6, 3]],
+            [[1, 2, 3, 4, 5, 6, 7], 10, [5, 6, 7, 1, 2, 3, 4]],
         ];
     }
 }

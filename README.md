@@ -56,8 +56,10 @@ The prime factors for a given number is the list of prime numbers such that thei
 
 For example:
 
-6 ➡️ 3 x 2
+6 ➡️ 3 x 2 
+
 20 ➡️ 5 x 2 x 2
+
 7 ➡️ 7
 
 Create a function that receives a positive number and returns its prime factors in an array.

@@ -2,10 +2,10 @@
 
 namespace App;
 
-class CyclicRotation
+class RightRotation
 {
 
-    public static function toRight($arr, $times): array
+    public static function generate($arr, $times): array
     {
         $rotated = [];
         $arrLength = count($arr);

@@ -29,13 +29,13 @@ Proceed by running <code>phpunit</code> or <code>.vendor/bin/phpunit</code> to r
 
 ## 1. Binary Gap
 
-A binary gap within a positive integer N is any maximal sequence of consecutive zeros that is surrounded by ones at both
+A binary gap for a positive integer N is the maximum sequence of consecutive zeros that is surrounded by ones at both
 ends in the binary representation of N. 
+
 For example:
 The number 9 has binary representation 1001 and contains a binary gap of length 2. 
 
-The number 529 has binary representation 1000010001 and contains two binary gaps: one of length 4 and one
-of length 3. 
+The number 529 has binary representation 1000010001 and contains a binary gap of 4
 
 The number 20 has binary representation 10100 and contains one binary gap of length 1.
 
@@ -59,19 +59,20 @@ Create a function that receives a number from 1 to 3999 and outputs its roman nu
 
 ## 4. Right Rotation
 
-Complete the function rotRight. It should return the resulting array of integers.
-rotRight has the following parameter(s):
+Complete the function generate. It should return the resulting array of integers.
+generate has the following parameter(s):
 
 1. An array of integers a.
 2. An integer d, the number of rotations.
 
 #### Output:
 
-Print a single line of n space-separated integers denoting the final state of the array after performing d right rotations.
+The final state of the array after performing d right rotations.
 
 Sample Input:
 
 [1, 2, 3, 4, 5]
+
 4
 
 Sample Output:

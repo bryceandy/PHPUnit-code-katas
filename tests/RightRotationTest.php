@@ -1,9 +1,9 @@
 <?php
 
-use App\CyclicRotation;
+use App\RightRotation;
 use PHPUnit\Framework\TestCase;
 
-class CyclicRotationTest extends TestCase
+class RightRotationTest extends TestCase
 {
     /**
      * @test
@@ -16,7 +16,7 @@ class CyclicRotationTest extends TestCase
      */
     public function it_rotates_an_array_to_the_right($arr, $times, $result): void
     {
-        $this->assertEquals($result, CyclicRotation::toRight($arr, $times));
+        $this->assertEquals($result, RightRotation::generate($arr, $times));
     }
 
     /**

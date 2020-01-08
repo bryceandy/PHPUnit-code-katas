@@ -25,6 +25,9 @@ class BinaryGap
             }
         }
 
+        if ($counter === 0 && count($comparator) === 0) {
+            return 0;
+        }
         return max($comparator);
     }
 

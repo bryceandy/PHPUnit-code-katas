@@ -14,11 +14,11 @@ class BinaryGap
         $comparator = [];
 
         for ($iterator = 1; $iterator < $binArrayLength; $iterator++ ) {
-            if ($binNum[$iterator] === 0) {
+            if ($binArray[$iterator] === 0) {
                 $counter++;
             }
 
-            if ($binNum[$iterator] === 1 && $counter > 0){
+            if ($binArray[$iterator] === 1 && $counter > 0){
 
                 $comparator[] = $counter;
                 $counter = 0;

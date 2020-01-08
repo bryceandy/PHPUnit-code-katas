@@ -13,15 +13,17 @@ The <code>tests</code> directory has a PHP Unit test class for these algorithms.
 
 Clone the repo,
 
-<code>
+```
   git clone https://github.com/bryceandy/PHPUnit-code-katas.git && cd PHPUnit-code-katas
-</code>
+```
 
 then install PHP dependencies
 
-<code>
-  composer install && composer dump-autoload
-</code>
+```
+  composer install
+```
+
+Proceed by running <code>phpunit</code> or <code>.vendor/bin/phpunit</code> to run all tests
 
 ### Algorithm Description
 

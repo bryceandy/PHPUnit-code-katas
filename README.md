@@ -87,4 +87,23 @@ in the array.
 For example:
 [1, 4, 3, 4, 7, 7, 1] 
 
-Should result into 3. Because 3 has no match in this array
+Should result into 3. Because 3 has no match in this array.
+
+## 6. Missing Permutation Element
+
+Given an array consisting of N different integers. The array contains integers in the range [1..(N + 1)], which means
+that exactly one element is missing.
+
+Your goal is to find that missing element.
+
+For example, given array A such that:
+
+[2, 3, 1, 5]
+
+the function should return 4, as it is the missing element.
+
+Write an efficient algorithm for the following assumptions:
+
+N is an integer within the range [0..100,000];
+the elements of A are all distinct;
+each element of array A is an integer within the range [1..(N + 1)].

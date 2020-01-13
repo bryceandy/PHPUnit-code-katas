@@ -7,7 +7,6 @@ class RightRotation
 
     public static function generate($arr, $times): array
     {
-        $rotated = [];
         $arrLength = count($arr);
 
         if (count($arr) === $times ) {
@@ -19,13 +18,13 @@ class RightRotation
             if (($itemIndex + $times) >= $arrLength) {
 
                 $newIndex = ($itemIndex + $times) % $arrLength;
-                $rotated[$newIndex] = $itemIndexValue;
+                $arr[$newIndex] = $itemIndexValue;
             }
             else {
-                $rotated[$itemIndex + $times] = $itemIndexValue;
+                $arr[$itemIndex + $times] = $itemIndexValue;
             }
         }
 
-        return $rotated;
+        return $arr;
     }
 }

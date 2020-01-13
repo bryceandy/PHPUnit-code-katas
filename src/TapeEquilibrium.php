@@ -5,14 +5,44 @@ namespace App;
 class TapeEquilibrium
 {
     /**
-     * Performance is very bad for larger arrays
-     * i.e with 10,000 elements
+     * Solution 1, Best performance. O(N)
      *
      * @param $arr
      *
      * @return int
      */
-    public static function generate($arr): int
+    public static function solution($arr): int
+    {
+        $length = count($arr);
+
+        if ($length === 2) return abs($arr[0] - $arr[1]);
+
+        // P=1, |A[0] - (A[1] + A[2] + ... + A[N-1])|
+        // P=2, |(A[0] + A[1]) - (A[2] + A[3] + ... + A[N-1])|
+        // P=3, |(A[0] + A[1] + A[2]) - (A[3] + A[4] + ... + A[N-1])|
+        // P=4, |(A[0] + A[1] + A[2] + A[3]) - (A[4] + A[5] + ... + A[N-1])|
+        // ...
+
+        $head = $arr[0];
+        $tail = array_sum($arr) - $head;
+        $minDiff = abs($head - $tail);
+
+        for ($parts = 1; $parts < $length - 1;  $parts++) {
+            $head += $arr[$parts];
+            $tail -= $arr[$parts];
+
+            $currDiff = abs($head - $tail);
+            if ($currDiff < $minDiff) {
+                $minDiff = $currDiff;
+            }
+        }
+
+        return $minDiff;
+    }
+
+     // Solution 2, performance is poor for larger
+     // arrays, i.e with 10,000 elements. O(N^2)
+    public static function solution2($arr)
     {
         $differences = [];
         $arrLength = count($arr);
@@ -37,9 +67,9 @@ class TapeEquilibrium
         return min($differences);
     }
 
-    // Another solution having performance issues
-    public static function solve($arr) {
-
+    // Another solution having performance issues. O(N^2)
+    public static function solution3($arr)
+    {
         $minDiff = 0; $total = 0;
         $arrLength = count($arr);
 
@@ -57,36 +87,6 @@ class TapeEquilibrium
             }
             else {
                 $minDiff = abs($leftSum - $rightSum);
-            }
-        }
-
-        return $minDiff;
-    }
-
-    /**
-     * Solution 3, best performance
-     *
-     * @param $arr
-     *
-     * @return int
-     */
-    public static function solution($arr): int
-    {
-        $length = count($arr);
-        $head = $arr[0];
-
-        if ($length === 2) return abs($arr[0] - $arr[1]);
-
-        $tail = array_sum($arr) - $head;
-        $minDiff = abs($head - $tail);
-
-        for ($parts = 1; $parts < $length;  $parts++) {
-            $head += $arr[$parts];
-            $tail -= $arr[$parts];
-
-            $currDiff = abs($head - $tail);
-            if ($currDiff < $minDiff) {
-                $minDiff = $currDiff;
             }
         }
 

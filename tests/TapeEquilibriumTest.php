@@ -21,7 +21,7 @@ class TapeEquilibriumTest extends TestCase
     /**
      * @return array
      */
-    private function checks(): array
+    public function checks(): array
     {
         return [
             [[3, 1, 2, 4, 3], 1],

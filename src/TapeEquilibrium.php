@@ -4,7 +4,14 @@ namespace App;
 
 class TapeEquilibrium
 {
-    // Performance is far from good, needs a fix
+    /**
+     * Performance is very bad for larger arrays
+     * i.e with 10,000 elements, needs a fix
+     *
+     * @param $arr
+     *
+     * @return int
+     */
     public static function generate($arr): int
     {
         $differences = [];

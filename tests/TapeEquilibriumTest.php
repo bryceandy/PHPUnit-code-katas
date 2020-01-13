@@ -26,6 +26,7 @@ class TapeEquilibriumTest extends TestCase
         return [
             [[3, 1, 2, 4, 3], 1],
             [[11, -5, 7], 1],
+            [[5, 10, 1, -5, 5, 3,4], 1],
         ];
     }
 }

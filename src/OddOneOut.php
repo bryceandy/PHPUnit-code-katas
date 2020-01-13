@@ -4,10 +4,32 @@ namespace App;
 
 class OddOneOut
 {
+    /**
+     * Solution 1, excellent performance
+     *
+     * @param $my_array
+     *
+     * @return int|string
+     */
+    public static function seek($my_array)
+    {
+        $frequencies = array_count_values($my_array);
+        $unpaired = 0;
 
-    // Solution is low on performance with very large arrays
-    public static function seek($my_array) {
+        foreach ($frequencies as $key => $val) {
 
+            if ($val % 2 === 1) {
+                $unpaired = $key;
+                break;
+            }
+        }
+
+        return $unpaired;
+    }
+
+    // Solution 2, low on performance with very large arrays
+    public function seek2($my_array)
+    {
         foreach ($my_array as $key => $val) {
 
             if ($my_array[$key] ?? 0) { // Is the value of this element still present?...

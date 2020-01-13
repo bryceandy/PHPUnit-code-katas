@@ -15,9 +15,10 @@ class RightRotation
 
         foreach ($arr as $itemIndex => $itemValue) {
 
-            if (($itemIndex + $times) >= $arrLength) {
+            if ($itemIndex + $times >= $arrLength) {
 
                 $newIndex = ($itemIndex + $times) % $arrLength;
+
                 $arr[$newIndex] = $itemValue;
             }
             else {

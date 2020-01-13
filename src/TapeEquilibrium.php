@@ -6,7 +6,7 @@ class TapeEquilibrium
 {
     /**
      * Performance is very bad for larger arrays
-     * i.e with 10,000 elements, needs a fix
+     * i.e with 10,000 elements
      *
      * @param $arr
      *
@@ -37,7 +37,7 @@ class TapeEquilibrium
         return min($differences);
     }
 
-    // Another solution also having performance issues
+    // Another solution having performance issues
     public static function solve($arr) {
 
         $minDiff = 0; $total = 0;
@@ -57,6 +57,36 @@ class TapeEquilibrium
             }
             else {
                 $minDiff = abs($leftSum - $rightSum);
+            }
+        }
+
+        return $minDiff;
+    }
+
+    /**
+     * Solution 3, best performance
+     *
+     * @param $arr
+     *
+     * @return int
+     */
+    public static function solution($arr): int
+    {
+        $length = count($arr);
+        $head = $arr[0];
+
+        if ($length === 2) return abs($arr[0] - $arr[1]);
+
+        $tail = array_sum($arr) - $head;
+        $minDiff = abs($head - $tail);
+
+        for ($parts = 1; $parts < $length;  $parts++) {
+            $head += $arr[$parts];
+            $tail -= $arr[$parts];
+
+            $currDiff = abs($head - $tail);
+            if ($currDiff < $minDiff) {
+                $minDiff = $currDiff;
             }
         }
 

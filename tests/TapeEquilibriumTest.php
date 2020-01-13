@@ -15,7 +15,7 @@ class TapeEquilibriumTest extends TestCase
      */
     public function it_determines_the_minimum_difference_of_a_tape($arr, $expected): void
     {
-        $this->assertEquals($expected, TapeEquilibrium::generate($arr));
+        $this->assertEquals($expected, TapeEquilibrium::solution($arr));
     }
 
     /**

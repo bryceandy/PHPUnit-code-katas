@@ -25,6 +25,7 @@ class TapeEquilibriumTest extends TestCase
     {
         return [
             [[3, 1, 2, 4, 3], 1],
+            [[11, -5, 7], 1],
         ];
     }
 }

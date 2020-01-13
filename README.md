@@ -13,17 +13,30 @@ The <code>tests</code> directory has a PHP Unit test class for these algorithms.
 
 Clone the repo,
 
-```
-  git clone https://github.com/bryceandy/PHPUnit-code-katas.git && cd PHPUnit-code-katas
+```bash
+git clone https://github.com/bryceandy/PHPUnit-code-katas.git && cd PHPUnit-code-katas
 ```
 
 then install PHP dependencies
 
-```
-  composer install
+```bash
+composer install
 ```
 
-Proceed by running <code>phpunit</code> or <code>.vendor/bin/phpunit</code> to run all tests
+Proceed by running 
+
+```bash
+./vendor/bin/phpunit tests
+``` 
+
+to run all tests, or
+
+```bash
+./vendor/bin/phpunit tests/BinaryGapTest
+``` 
+
+to run a specific test class.
+
 
 ### Algorithm Description
 

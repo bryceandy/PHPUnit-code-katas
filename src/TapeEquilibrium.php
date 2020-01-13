@@ -14,12 +14,14 @@ class TapeEquilibrium
 
             $difference = 0;
 
-            for ($aIndex = 0; $aIndex < $parts; $aIndex++) {
-                $difference += $arr[$aIndex];
-            }
+            foreach ($arr as $key => $val){
 
-            for ($p = $parts; $p < $arrLength;  $p++) {
-                $difference -= $arr[$p];
+                if ($key < $parts) {
+                    $difference += $val;
+                }
+                if ($key >= $parts) {
+                    $difference -= $val;
+                }
             }
 
             $differences[] = abs($difference);

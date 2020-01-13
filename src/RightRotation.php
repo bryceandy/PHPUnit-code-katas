@@ -9,7 +9,7 @@ class RightRotation
     {
         $arrLength = count($arr);
 
-        if (count($arr) === $times ) {
+        if ($arrLength === $times ) {
             return $arr;
         }
 

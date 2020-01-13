@@ -5,9 +5,6 @@ namespace App;
 class PrimeFactors
 {
     /**
-     * This piece of code is so clean such that it
-     * makes you wanna look at it over & over 🤯
-     *
      * @param $number
      *
      * @return array

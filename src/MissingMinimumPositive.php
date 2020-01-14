@@ -19,16 +19,13 @@ class MissingMinimumPositive
 
         sort($filtered);
 
-        $min_val = 1;
+        $length = count($filtered);
 
-        foreach ($filtered as $val) {
+        for ($min_val = 1; $min_val < $length + 1; $min_val++) {
 
-            if ($val > $min_val) {
+            if ($filtered[$min_val - 1] > $min_val) {
 
                 break;
-            }
-            else {
-                $min_val ++;
             }
         }
 

@@ -165,7 +165,7 @@ Write an efficient algorithm for the following assumptions:
 N is an integer within the range [2..100,000];
 each element of array A is an integer within the range [−1,000..1,000].
 
-## 8. Frog River
+## 8. Frog River Jump
 
 A small frog wants to get to the other side of a river. The frog is initially located on one bank of the 
 river (position 0) and wants to get to the opposite bank (position X+1). Leaves fall from a tree onto the surface

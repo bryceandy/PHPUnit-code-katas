@@ -14,7 +14,7 @@ class FrogRiverJumpTest extends TestCase
      * @param $positions
      * @param $time
      */
-    public function it_finds_the_minimal_time_the_frog_can_jump($distance, $positions, $time): void
+    public function it_finds_the_minimal_time_the_frog_can_jump($positions, $distance, $time): void
     {
         $frogRiverJump = new FrogRiverJump();
 

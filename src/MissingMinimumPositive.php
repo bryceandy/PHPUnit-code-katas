@@ -7,7 +7,9 @@ class MissingMinimumPositive
 
     public function solve($A) {
 
-        $positives = array_filter($A, "is_positive");
+        $positives = array_filter($A, function ($var) {
+            return $var > 0;
+        });
 
         if (count($positives) === 0) {
             return 1;
@@ -31,10 +33,5 @@ class MissingMinimumPositive
         }
 
         return $min_val;
-    }
-
-    function is_positive($var)
-    {
-        return $var > 0;
     }
 }

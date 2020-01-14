@@ -218,3 +218,16 @@ Write an efficient algorithm for the following assumptions:
 
 N and X are integers within the range [1..100,000];
 each element of array A is an integer within the range [1..X].
+
+## 9. Permutation Check
+
+Given an array A of N integers, write a function to determine if A is a permutation.
+
+A permutation consists of integers 1, 2, ..., N. If it isn't a permutation the result should be 0,
+and 1 if the array is a permutation.
+
+Examples:
+
+Consider array X = [4, 1, 3, 2], the result should be 1.
+
+But an array Y = [4, 1, 2] should result into 0.

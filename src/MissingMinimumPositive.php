@@ -19,7 +19,7 @@ class MissingMinimumPositive
 
         sort($filtered);
 
-        $min_val = $filtered[0];
+        $min_val = 1;
 
         foreach ($filtered as $val) {
 
@@ -28,7 +28,7 @@ class MissingMinimumPositive
                 break;
             }
             else {
-                $min_val += 1;
+                $min_val ++;
             }
         }
 

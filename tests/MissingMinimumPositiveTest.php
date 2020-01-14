@@ -29,7 +29,7 @@ class MissingMinimumPositiveTest extends TestCase
             [[1, 3, 6, 4, 1, 2], 5],
             [[1, 2, 3], 4],
             [[-1, -3], 1],
-            [[1789991], 1789992],
+            [[1789991], 1],
         ];
     }
 }

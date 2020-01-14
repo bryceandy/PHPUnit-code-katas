@@ -117,9 +117,9 @@ the function should return 4, as it is the missing element.
 
 Write an efficient algorithm for the following assumptions:
 
-N is an integer within the range [0..100,000];
-the elements of A are all distinct;
-each element of array A is an integer within the range [1..(N + 1)].
+- N is an integer within the range [0..100,000];
+- The elements of A are all distinct;
+- Each element of array A is an integer within the range [1..(N + 1)].
 
 ## 7. Tape Equilibrium
 
@@ -162,8 +162,8 @@ the function should return 1, as explained above.
 
 Write an efficient algorithm for the following assumptions:
 
-N is an integer within the range [2..100,000];
-each element of array A is an integer within the range [−1,000..1,000].
+- N is an integer within the range [2..100,000];
+- Each element of array A is an integer within the range [−1,000..1,000].
 
 ## 8. Frog River Jump
 
@@ -216,8 +216,8 @@ the function should return 6, as explained above.
 
 Write an efficient algorithm for the following assumptions:
 
-N and X are integers within the range [1..100,000];
-each element of array A is an integer within the range [1..X].
+- N and X are integers within the range [1..100,000];
+- each element of array A is an integer within the range [1..X].
 
 ## 9. Permutation Check
 
@@ -231,3 +231,19 @@ Examples:
 Consider array X = [4, 1, 3, 2], the result should be 1.
 
 But an array Y = [4, 1, 2] should result into 0.
+
+## 10. Missing Minimum Positive Integer
+
+Given an array A of N integers, write a function that,  returns the smallest positive integer (greater than 0) that does
+not occur in A.
+
+For example, given A = [1, 3, 6, 4, 1, 2], the function should return 5.
+
+Given A = [1, 2, 3], the function should return 4.
+
+Given A = [−1, −3], the function should return 1.
+
+Write an efficient algorithm for the following assumptions:
+
+- N is an integer within the range [1..100,000];
+- each element of array A is an integer within the range [−1,000,000..1,000,000].

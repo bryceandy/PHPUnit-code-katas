@@ -57,11 +57,10 @@ class MaxCounters
     public function operate2($N, $A)
     {
         $counters = array_fill(0, $N, 0);
-        $countersLength = count($counters);
 
         foreach ($A as $val) {
 
-            if ($val < $countersLength + 1) {
+            if ($val < $N + 1) {
 
                 $counters[$val - 1] ++;
             }

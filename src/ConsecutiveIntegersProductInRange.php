@@ -5,7 +5,7 @@ namespace App;
 class ConsecutiveIntegersProductInRange
 {
     /**
-     * Not a good solution yet, 100% correctness 0% performance on large arrays
+     * Solution 1, 100% correctness 0% performance on large arrays
      *
      * @param $A
      * @param $B
@@ -24,6 +24,31 @@ class ConsecutiveIntegersProductInRange
 
                     $counter++;
                 }
+            }
+        }
+
+        return $counter;
+    }
+
+    /**
+     * Solution 2, 100% correctness 0% performance on large arrays
+     *
+     * @param $A
+     * @param $B
+     *
+     * @return int
+     */
+    public function calculate2($A, $B): int
+    {
+        $counter = 0;
+
+        for ($factor = 1; $factor <= $B; $factor++) {
+
+            $product = $factor * ($factor + 1);
+
+            if ($product >= $A && $product <= $B) {
+
+                $counter++;
             }
         }
 

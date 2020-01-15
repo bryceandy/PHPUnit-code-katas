@@ -2,10 +2,10 @@
 
 namespace App;
 
-class MinimumTurns
+class MinimumCoinTurns
 {
     /**
-     * No performance checks required
+     * No performance checks required, 100% correctness
      *
      * @param $A
      *

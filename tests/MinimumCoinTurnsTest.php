@@ -1,9 +1,9 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use App\MinimumTurns;
+use App\MinimumCoinTurns;
 
-class MinimumTurnsTest extends TestCase
+class MinimumCoinTurnsTest extends TestCase
 {
     /**
      * @test
@@ -15,7 +15,7 @@ class MinimumTurnsTest extends TestCase
      */
     public function it_finds_the_minimum_turns_for_alternating_coins($arr, $expected)
     {
-        $minTurns = new MinimumTurns();
+        $minTurns = new MinimumCoinTurns();
 
         $this->assertEquals($expected, $minTurns->evaluate($arr));
     }

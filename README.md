@@ -338,7 +338,7 @@ Or, After reversing the third and fourth coin, we achieve an alternating sequenc
 
 Performance is not a requirement for this problem, focus on the code correctness.
 
-## 13. Consecutive Product In Range
+## 13. Consecutive Integers Product In Range
 
 Write a function solution that given two integers A and B, returns the number of integers from the range [A..B]
 (ends are included) which can be expressed as the product of two consecutive integers, that is X*(X+1), for some integer

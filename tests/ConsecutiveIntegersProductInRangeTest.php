@@ -1,9 +1,9 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use App\ConsecutiveProductInRange;
+use App\ConsecutiveIntegersProductInRange;
 
-class ConsecutiveProductInRangeTest extends TestCase
+class ConsecutiveIntegersProductInRangeTest extends TestCase
 {
     /**
      * @test
@@ -16,11 +16,14 @@ class ConsecutiveProductInRangeTest extends TestCase
      */
     public function it_finds_the_number_of_consecutive_integers_whose_product_is_in_range($start, $end, $expected)
     {
-        $cpir = new ConsecutiveProductInRange();
+        $cipir = new ConsecutiveIntegersProductInRange();
 
-        $this->assertEquals($expected, $cpir->calculate($start, $end));
+        $this->assertEquals($expected, $cipir->calculate($start, $end));
     }
 
+    /**
+     * @return array
+     */
     public function checks()
     {
         return [

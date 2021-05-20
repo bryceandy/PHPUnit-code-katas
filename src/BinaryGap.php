@@ -19,7 +19,7 @@ class BinaryGap
                 $counter ++;
             }
 
-            if ($binArray[$iterator] === 1 && $counter > 0){
+            if ($binArray[$iterator] === 1 && $counter > 0) {
                 $comparator[] = $counter;
                 $counter = 0;
             }

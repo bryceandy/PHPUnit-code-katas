@@ -18,9 +18,6 @@ class TapeEquilibriumTest extends TestCase
         $this->assertEquals($expected, TapeEquilibrium::solution($arr));
     }
 
-    /**
-     * @return array
-     */
     public function checks(): array
     {
         return [

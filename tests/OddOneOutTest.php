@@ -19,9 +19,6 @@ class OddOneOutTest extends TestCase
         $this->assertEquals($expected, OddOneOut::seek($arr));
     }
 
-    /**
-     * @return array
-     */
     public function check():array
     {
         return [

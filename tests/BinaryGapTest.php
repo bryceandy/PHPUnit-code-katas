@@ -19,9 +19,6 @@ class BinaryGapTest extends TestCase
         $this->assertEquals($expected, $binaryGap->findGap($number));
     }
 
-    /**
-     * @return array
-     */
     public function checks(): array
     {
         return [

@@ -4,14 +4,8 @@ namespace App;
 
 class MissingMinimumPositive
 {
-    /**
-     * Solution 1, 100% performance and correctness
-     *
-     * @param $A
-     *
-     * @return int|mixed
-     */
-    public function solve($A)
+    // Solution 1, 100% performance and correctness
+    public function solve($A): int
     {
         $positives = $this->positives($A);
 
@@ -20,16 +14,16 @@ class MissingMinimumPositive
         }
 
         $least_range = range(1, count($positives));
+
         $missing_range = array_diff($least_range, $positives);
 
-        if (count($missing_range) === 0) {
-            return count($positives) + 1;
-        }
-        return min($missing_range);
+        return count($missing_range) === 0
+            ? count($positives) + 1
+            : min($missing_range);
     }
 
     // Solution 2, 100% correctness, 75% in performance
-    public function solve2($A)
+    public function solve2($A): int
     {
         $positives = $this->positives($A);
 
@@ -54,12 +48,7 @@ class MissingMinimumPositive
         return $min_val;
     }
 
-    /**
-     * @param $arr
-     *
-     * @return array
-     */
-    private function positives($arr)
+    private function positives($arr): array
     {
         return array_filter($arr, function ($var) {
             return $var > 0;

@@ -20,7 +20,7 @@ class MinimumCoinTurnsTest extends TestCase
         $this->assertEquals($expected, $minTurns->evaluate($arr));
     }
 
-    public function checks()
+    public function checks(): array
     {
         return [
             [[1, 0, 1, 0, 1, 1], 1],

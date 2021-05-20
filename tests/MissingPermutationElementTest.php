@@ -18,9 +18,6 @@ class MissingPermutationElementTest extends TestCase
         $this->assertEquals($expectedMissing, MissingPermutationElement::find($arr));
     }
 
-    /**
-     * @return array
-     */
     public function checks(): array
     {
         return [

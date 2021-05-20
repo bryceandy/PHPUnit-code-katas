@@ -20,9 +20,6 @@ class PermCheckTest extends TestCase
         $this->assertEquals($result, $permCheck->evaluate($arr));
     }
 
-    /**
-     * @return array
-     */
     public function checks(): array
     {
         return [

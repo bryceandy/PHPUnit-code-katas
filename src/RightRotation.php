@@ -4,7 +4,6 @@ namespace App;
 
 class RightRotation
 {
-
     public static function generate($arr, $times): array
     {
         $arrLength = count($arr);

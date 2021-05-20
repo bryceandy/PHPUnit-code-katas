@@ -18,11 +18,6 @@ class RomanNumeralsTest extends TestCase
         $this->assertEquals($numeral, RomanNumerals::generate($number));
     }
 
-    /**
-     * Data provider
-     *
-     * @return array
-     */
     public function checks(): array
     {
         return [

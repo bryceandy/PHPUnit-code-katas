@@ -4,13 +4,7 @@ namespace App;
 
 class OddOneOut
 {
-    /**
-     * Solution 1, excellent performance
-     *
-     * @param $my_array
-     *
-     * @return int|string
-     */
+    // Solution 1, excellent performance
     public static function seek($my_array)
     {
         $frequencies = array_count_values($my_array);

@@ -20,9 +20,6 @@ class MissingMinimumPositiveTest extends TestCase
         $this->assertEquals($expected, $missingInteger->solve($arr));
     }
 
-    /**
-     * @return array
-     */
     public function checker(): array
     {
         return [

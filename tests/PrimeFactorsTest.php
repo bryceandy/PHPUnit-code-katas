@@ -20,11 +20,6 @@ class PrimeFactorsTest extends TestCase
         $this->assertEquals($expected, $factors->generate($number));
     }
 
-    /**
-     * Data provider
-     *
-     * @return array
-     */
     public function factors(): array
     {
         return [

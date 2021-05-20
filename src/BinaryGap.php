@@ -4,14 +4,12 @@ namespace App;
 
 class BinaryGap
 {
-
-    public function findGap($N) {
-
+    public function findGap($N): int
+    {
         $binNum = $this->createBinaryString($N);
         // Convert the binary string to an array of integers
         $binArray = array_map('intval', str_split($binNum));
         $binArrayLength = count($binArray);
-
         $counter = 0;
         $comparator = [];
 
@@ -27,10 +25,9 @@ class BinaryGap
             }
         }
 
-        if (($counter === 0 && count($comparator) === 0) || count($comparator) === 0) {
-            return 0;
-        }
-        return max($comparator);
+        return ($counter === 0 && count($comparator) === 0) || count($comparator) === 0
+            ? 0
+            : max($comparator);
     }
 
     private function createBinaryString($num, $binary = ''): string
@@ -51,7 +48,6 @@ class BinaryGap
             }
         }
 
-        $binary = '1'.$binary;
-        return $binary;
+        return '1'.$binary;
     }
 }

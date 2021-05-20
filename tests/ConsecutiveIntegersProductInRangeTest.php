@@ -21,10 +21,7 @@ class ConsecutiveIntegersProductInRangeTest extends TestCase
         $this->assertEquals($expected, $cipir->calculate($start, $end));
     }
 
-    /**
-     * @return array
-     */
-    public function checks()
+    public function checks(): array
     {
         return [
             [6, 20, 3],

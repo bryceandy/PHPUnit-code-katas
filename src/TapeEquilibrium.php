@@ -4,13 +4,7 @@ namespace App;
 
 class TapeEquilibrium
 {
-    /**
-     * Solution 1, Best performance. O(N)
-     *
-     * @param $arr
-     *
-     * @return int
-     */
+    // Solution 1, Best performance. O(N)
     public static function solution($arr): int
     {
         $length = count($arr);
@@ -32,6 +26,7 @@ class TapeEquilibrium
             $tail -= $arr[$parts];
 
             $currDiff = abs($head - $tail);
+
             if ($currDiff < $minDiff) {
                 $minDiff = $currDiff;
             }
@@ -40,8 +35,7 @@ class TapeEquilibrium
         return $minDiff;
     }
 
-     // Solution 2, performance is poor for larger
-     // arrays, i.e with 10,000 elements. O(N^2)
+     // Solution 2, performance is poor for larger arrays, i.e with 10,000 elements. O(N^2)
     public static function solution2($arr)
     {
         $differences = [];
@@ -79,7 +73,6 @@ class TapeEquilibrium
 
             $leftContent = array_chunk($arr, $parts);
             $leftSum = array_sum($leftContent[0]);
-
             $rightSum = $total - $leftSum;
 
             if ($parts > 1 && $minDiff < abs($leftSum - $rightSum)) {

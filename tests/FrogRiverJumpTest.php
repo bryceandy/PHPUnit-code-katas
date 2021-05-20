@@ -21,9 +21,6 @@ class FrogRiverJumpTest extends TestCase
         $this->assertEquals($time, $frogRiverJump->estimate($distance, $positions));
     }
 
-    /**
-     * @return array
-     */
     public function checker(): array
     {
         return [

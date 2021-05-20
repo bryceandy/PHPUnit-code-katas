@@ -4,13 +4,7 @@ namespace App;
 
 class MinimumCoinTurns
 {
-    /**
-     * No performance checks required, 100% correctness
-     *
-     * @param $A
-     *
-     * @return mixed
-     */
+    // No performance checks required, 100% correctness
     public function evaluate($A)
     {
         $length = count($A);

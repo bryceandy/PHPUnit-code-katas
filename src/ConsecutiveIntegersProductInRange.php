@@ -4,14 +4,7 @@ namespace App;
 
 class ConsecutiveIntegersProductInRange
 {
-    /**
-     * Solution 1, 100% correctness 0% performance on large arrays
-     *
-     * @param $A
-     * @param $B
-     *
-     * @return int
-     */
+    // Solution 1, 100% correctness 0% performance on large arrays
     public function calculate($A, $B): int
     {
         $counter = 0;
@@ -30,14 +23,7 @@ class ConsecutiveIntegersProductInRange
         return $counter;
     }
 
-    /**
-     * Solution 2, 100% correctness 0% performance on large arrays
-     *
-     * @param $A
-     * @param $B
-     *
-     * @return int
-     */
+    // Solution 2, 100% correctness 0% performance on large arrays
     public function calculate2($A, $B): int
     {
         $counter = 0;

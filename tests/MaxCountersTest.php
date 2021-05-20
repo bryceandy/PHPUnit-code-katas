@@ -21,9 +21,6 @@ class MaxCountersTest extends TestCase
         $this->assertEquals($result, $maxCounters->operate($counters, $operations));
     }
 
-    /**
-     * @return array
-     */
     public function check(): array
     {
         return [

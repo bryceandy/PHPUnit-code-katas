@@ -19,9 +19,6 @@ class RightRotationTest extends TestCase
         $this->assertEquals($result, RightRotation::generate($arr, $times));
     }
 
-    /**
-     * @return array
-     */
     public function checkCases(): array
     {
         return [

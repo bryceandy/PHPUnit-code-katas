@@ -16,7 +16,7 @@ class BinaryGap
         for ($iterator = 1; $iterator < $binArrayLength; $iterator++ ) {
 
             if ($binArray[$iterator] === 0) {
-                $counter++;
+                $counter ++;
             }
 
             if ($binArray[$iterator] === 1 && $counter > 0){
@@ -33,21 +33,21 @@ class BinaryGap
     private function createBinaryString($num, $binary = ''): string
     {
         while ($num % 2 === 0) {
-            $binary = '0'.$binary;
+            $binary = '0' . $binary;
             $num /= 2;
         }
 
         while ($num > 1 && $num % 2 === 1) {
-            $num--;
-            $binary = '1'.$binary;
+            $num --;
+            $binary = '1' . $binary;
             $num /= 2;
 
             while ($num % 2 === 0) {
-                $binary = '0'.$binary;
+                $binary = '0' . $binary;
                 $num /= 2;
             }
         }
 
-        return '1'.$binary;
+        return '1' . $binary;
     }
 }

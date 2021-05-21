@@ -31,6 +31,7 @@ class PrimeFactorsTest extends TestCase
             [6, [2, 3]],
             [7, [7]],
             [8, [2, 2, 2]],
+            [20, [2, 2, 5]],
             [999, [3, 3, 3, 37]],
         ];
     }

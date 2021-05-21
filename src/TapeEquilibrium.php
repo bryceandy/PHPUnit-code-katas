@@ -9,7 +9,8 @@ class TapeEquilibrium
     {
         $length = count($arr);
 
-        if ($length === 2) return abs($arr[0] - $arr[1]);
+        if ($length === 2)
+            return abs($arr[0] - $arr[1]);
 
         // P=1, |A[0] - (A[1] + A[2] + ... + A[N-1])|
         // P=2, |(A[0] + A[1]) - (A[2] + A[3] + ... + A[N-1])|
@@ -21,10 +22,10 @@ class TapeEquilibrium
         $tail = array_sum($arr) - $head;
         $minDiff = abs($head - $tail);
 
-        for ($parts = 1; $parts < $length - 1;  $parts++) {
+        for ($parts = 1; $parts < $length - 1;  $parts++)
+        {
             $head += $arr[$parts];
             $tail -= $arr[$parts];
-
             $currDiff = abs($head - $tail);
 
             if ($currDiff < $minDiff) {
@@ -41,12 +42,11 @@ class TapeEquilibrium
         $differences = [];
         $arrLength = count($arr);
 
-        for ($parts = 1; $parts < $arrLength;  $parts++) {
-
+        for ($parts = 1; $parts < $arrLength;  $parts++)
+        {
             $difference = 0;
 
             foreach ($arr as $key => $val){
-
                 if ($key < $parts) {
                     $difference += $val;
                 }
@@ -64,13 +64,15 @@ class TapeEquilibrium
     // Another solution having performance issues. O(N^2)
     public static function solution3($arr)
     {
-        $minDiff = 0; $total = 0;
+        $minDiff = 0;
+        $total = 0;
         $arrLength = count($arr);
 
-        foreach ($arr as $val) $total += $val;
+        foreach ($arr as $val)
+            $total += $val;
 
-        for ($parts = 1; $parts < $arrLength;  $parts++) {
-
+        for ($parts = 1; $parts < $arrLength;  $parts++)
+        {
             $leftContent = array_chunk($arr, $parts);
             $leftSum = array_sum($leftContent[0]);
             $rightSum = $total - $leftSum;

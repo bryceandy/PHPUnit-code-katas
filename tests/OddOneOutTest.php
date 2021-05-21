@@ -5,7 +5,6 @@ use PHPUnit\Framework\TestCase;
 
 class OddOneOutTest extends TestCase
 {
-
     /**
      * @test
      *

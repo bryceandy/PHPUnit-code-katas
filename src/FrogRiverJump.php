@@ -8,9 +8,9 @@ class FrogRiverJump
     {
         foreach ($positions as $key => $val) {
 
-            if (! isset($position_reached[$val])) {
+            if (! isset($positionReached[$val])) {
 
-                $position_reached[$val] = true;
+                $positionReached[$val] = true;
 
                 $distance--;
             }

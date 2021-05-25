@@ -15,9 +15,7 @@ class MissingMinimumPositiveTest extends TestCase
      */
     public function it_determines_the_missing_minimum_positive_integer($arr, $expected): void
     {
-        $missingInteger = new MissingMinimumPositive();
-
-        $this->assertEquals($expected, $missingInteger->solve($arr));
+        $this->assertEquals($expected, (new MissingMinimumPositive)->solve($arr));
     }
 
     public function checker(): array

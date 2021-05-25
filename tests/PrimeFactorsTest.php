@@ -15,9 +15,7 @@ class PrimeFactorsTest extends TestCase
      */
     public function it_generates_prime_factors($number, $expected): void
     {
-        $factors = new PrimeFactors();
-
-        $this->assertEquals($expected, $factors->generate($number));
+        $this->assertEquals($expected, (new PrimeFactors)->generate($number));
     }
 
     public function factors(): array

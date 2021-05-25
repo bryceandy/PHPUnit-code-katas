@@ -15,9 +15,7 @@ class PermCheckTest extends TestCase
      */
     public function  it_will_determine_if_an_array_is_a_permutation($arr, $result): void
     {
-        $permCheck = new PermCheck();
-
-        $this->assertEquals($result, $permCheck->evaluate($arr));
+        $this->assertEquals($result, (new PermCheck)->evaluate($arr));
     }
 
     public function checks(): array

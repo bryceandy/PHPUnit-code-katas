@@ -15,9 +15,7 @@ class MinimumCoinTurnsTest extends TestCase
      */
     public function it_finds_the_minimum_turns_for_alternating_coins($arr, $expected)
     {
-        $minTurns = new MinimumCoinTurns();
-
-        $this->assertEquals($expected, $minTurns->evaluate($arr));
+        $this->assertEquals($expected, (new MinimumCoinTurns)->evaluate($arr));
     }
 
     public function checks(): array

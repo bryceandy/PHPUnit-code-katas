@@ -15,9 +15,7 @@ class BinaryGapTest extends TestCase
      */
     public function it_counts_the_binary_gap_of_a_given_decimal($number, $expected): void
     {
-        $binaryGap = new BinaryGap();
-
-        $this->assertEquals($expected, $binaryGap->findGap($number));
+        $this->assertEquals($expected, (new BinaryGap)->findGap($number));
     }
 
     public function checks(): array

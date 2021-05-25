@@ -11,8 +11,8 @@ class MaxCounters
         $maximumCounter = 0;
         $currentMaximum = 0;
 
-        foreach ($A as $val) {
-
+        foreach ($A as $val)
+        {
             if ($val < $N + 1) {
 
                 if ($counters[$val - 1] < $maximumCounter) {
@@ -34,8 +34,8 @@ class MaxCounters
             }
         }
 
-        for ($index = 0; $index < $N; $index++) {
-
+        for ($index = 0; $index < $N; $index++)
+        {
             if ($counters[$index] < $maximumCounter) {
 
                 $counters[$index] = $maximumCounter;

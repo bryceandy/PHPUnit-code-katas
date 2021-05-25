@@ -15,7 +15,7 @@ class FrogRiverJump
                 $distance--;
             }
 
-            if (!$distance) {
+            if (! $distance) {
                 return $key;
             }
         }

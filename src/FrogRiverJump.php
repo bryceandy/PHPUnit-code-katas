@@ -11,7 +11,7 @@ class FrogRiverJump
             if (! isset($positionReached[$val])) {
                 $positionReached[$val] = true;
 
-                $distance--;
+                $distance --;
             }
 
             if (! $distance) {

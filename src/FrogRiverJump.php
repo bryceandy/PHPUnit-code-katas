@@ -6,10 +6,9 @@ class FrogRiverJump
 {
     public function estimate($distance, $positions): int
     {
-        foreach ($positions as $key => $val) {
-
+        foreach ($positions as $key => $val)
+        {
             if (! isset($positionReached[$val])) {
-
                 $positionReached[$val] = true;
 
                 $distance--;

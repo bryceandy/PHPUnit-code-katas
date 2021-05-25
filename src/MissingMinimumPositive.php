@@ -13,13 +13,11 @@ class MissingMinimumPositive
             return 1;
         }
 
-        $least_range = range(1, count($positives));
+        $leastRange = range(1, count($positives));
 
-        $missing_range = array_diff($least_range, $positives);
+        $missingRange = array_diff($leastRange, $positives);
 
-        return count($missing_range) === 0
-            ? count($positives) + 1
-            : min($missing_range);
+        return count($missingRange) === 0 ? count($positives) + 1 : min($missingRange);
     }
 
     // Solution 2, 100% correctness, 75% in performance
@@ -37,15 +35,15 @@ class MissingMinimumPositive
 
         $length = count($filtered);
 
-        for ($min_val = 1; $min_val < $length + 1; $min_val++) {
+        for ($minVal = 1; $minVal < $length + 1; $minVal++) {
 
-            if ($filtered[$min_val - 1] > $min_val) {
+            if ($filtered[$minVal - 1] > $minVal) {
 
                 break;
             }
         }
 
-        return $min_val;
+        return $minVal;
     }
 
     private function positives($arr): array

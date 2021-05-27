@@ -21,7 +21,10 @@ class PalindromeCheckTest extends TestCase
     public function strings(): array
     {
         return [
-            ['abba', true],
+            ['zdsptawefecbickktjoeeojtkkcibcefewatpsdz', true],
+            ['ab71ba', false],
+            ['ksswieohzzonjqosouzbnthoqfktlhokcblmleilmrbxvldvodyhuzknirkdlexrprgqbznnwypsjowrjyteosbhqflkvyfshhgzchhchyeeasbopifwhsusjvxsvlxtchrxzywptdljywcqykstepgzufvcxphtjsnxeveuqybmifdbpnwwruqgyzbltubkjzvxhpsuusphxvzjkbutlbzygqurwwnpbdfimbyquevexnsjthpxcvfuzgpetskyqcwyjldtpwyzxrhctxlvsxvjsushwfipobsaeeyhchhczghhsfyvklfqhbsoetyjrwojspywnnzbqgrprxeldkrinkzuhydovdlvxbrmlielmlbckohltkfqohtnbzuosoqjnozzhoeiwssk', true],
+            ['sxwghmtxvzpzmxejczaqufqmibscltvbzouuordogclpqywzgyfulfpzuzwvkhhfitozydwjjoacdxfspbakpnltunrrgzffzcjxsxwghmtxvzpzmxejczaqufqmibscltvbzouuordogclpqywzgyfulfpzuzwvkhhfitozydwjjoacdxfspbakpnltunrrgzffzcjx', false],
         ];
     }
 }

@@ -356,3 +356,17 @@ Write an efficient algorithm for the following assumptions:
 
 - A<=B
 
+## 14. Palindrome
+
+Given the string, check if it is a palindrome.
+
+Example:
+
+For inputString = "aabaa", the output should be  true
+
+For inputString = "abac", the output should be  false
+
+For inputString = "a", the output should be  true.
+
+true if inputString is a palindrome, false otherwise.
+

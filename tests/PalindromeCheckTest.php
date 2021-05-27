@@ -15,7 +15,7 @@ class PalindromeCheckTest extends TestCase
      */
     public function it_checks_for_a_valid_palindrome_string($string, $result)
     {
-        $this->assertEquals($result, (new Palindrome)->check($string));
+        $this->assertEquals($result, Palindrome::check($string));
     }
 
     public function strings(): array

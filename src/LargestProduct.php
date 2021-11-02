@@ -9,8 +9,7 @@ class LargestProduct
         $length = count($array);
         $products = [];
 
-        for($i = 0; $i < $length - 1; $i++)
-        {
+        for ($i = 0; $i < $length - 1; $i++) {
             $products[] = $array[$i] * $array[$i + 1];
         }
 
